@@ -5,7 +5,8 @@ import '../node_modules/flat-ui/bootstrap/css/bootstrap.css';
 import '../node_modules/flat-ui/css/flat-ui.css';
 import SimpleSlider from './SimpleSlider'
 import './App.css';
-import PageTabs from './PageTabs'
+import PageTabs from './PageTabs';
+import PricingTable from './PricingTable';
 
 class Page extends Component {
   render(){
@@ -19,6 +20,7 @@ class Page extends Component {
             <div className="content">
               <SimpleSlider/>
               <PageTabs/>
+              <PricingTable/>
             </div>
           </div>
         : null}

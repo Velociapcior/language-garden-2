@@ -168,3 +168,24 @@ div.col-md-8 h3, div.col-md-8 h6 {
 .todo {
   margin-bottom: 0;
 }
+
+.ReactTable {
+  margin-bottom: 30px;
+}
+
+.rt-th
+{
+  color: #e1e1e1;
+  background-color: rgba(103,79,127,1);
+  border-right: 1px solid rgba(59,38,82,1);
+}
+
+.rt-tr-group {
+ cursor: pointer;
+}
+
+.rt-tr-group:hover {
+  transition-duration: .28s;
+  background-color: rgba(59,38,82,1);
+  color: #e1e1e1;
+}

@@ -87,7 +87,7 @@ class PageTabs extends Component {
                       </div>
                     </li>
                     <li>
-                    <div class="todo-icon fui-check"></div>
+                    <div className="todo-icon fui-check"></div>
                       <div className="todo-content">
                         <h4 className="todo-name"> Kursy egzaminacyjne</h4>
                         Kursy egzaminacyjne: kursy obejmujące przygotowanie do egzaminów tj.: gimnazjalny, maturalny, 
