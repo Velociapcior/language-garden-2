@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  margin-top: 25vh;
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #3b2652;
+  height: 100vh;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 3rem;
+  margin: 50px;
+}
+
+.Page-title {
+  font-size: 1em;
+  margin: 25px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.001;
+  
+  transition: opacity 500ms ease;
+}
+
+.header{
+  color: white;
+  grid-area: header;
+  font-size: 4rem;
+  padding: 3vh 0 3vh 0;
+
+  margin-bottom: 10px;
+
+  background: rgba(103,79,127,1) ; /* Old browsers */
+}
+
+.page-enter {
+  opacity: 0.01;
+}
+
+.page-enter.page-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease;
+}
+
+.page-leave {
+  opacity: 1;
+}
+
+.page-leave.page-leave-active {
+  opacity: 0.001;
+  
+  transition: opacity 1000ms ease;
+}
+
+.content {
+  min-height: 50vh;
+  margin: 0 20vw 0 20vw;
+
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 0;
+  }
+}
+
+
+.next-arrow, .prev-arrow {
+  position: absolute;
+  top:0%;
+  display: block;
+  font-family: 'slick';
+  height: 100%;
+
+  margin: 0 auto;
+  font-size: 2.0rem;
+  padding: 0.5rem 1rem;
+  display: block;
+
+  opacity: 0.4;
+  background-color: #f1f1f1;
+  color: rgba(103,79,127,1);
+  border-color: rgba(59,38,82,1);
+  border: 1px solid;
+
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.next-arrow:hover, .prev-arrow:hover {
+  background-color: rgba(103,79,127,0.7);
+  color: #ffffff;
+  border-color: rgba(59,38,82,1);
+}
+
+.next-arrow:active, .prev-arrow:active { 
+  background-color: rgba(59,38,82,1);
+  opacity: 1;
+}
+
+.next-arrow:focus, .prev-arrow:focus {
+  outline:0;
+}
+
+.prev-arrow {
+  z-index: 1000;
+}
+
+.next-arrow
+{
+  right: 0px;
+  z-index: 1000;
+}
+
+.img-offer{
+  max-width: 100%;
+  max-height: 100%;
+}
