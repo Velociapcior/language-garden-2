@@ -55,11 +55,16 @@
 
 .header{
   color: white;
-  grid-area: header;
-  font-size: 4rem;
-  padding: 3vh 0 3vh 0;
+  font-size: 3rem;
+  padding: 1vh 0 1vh 0;
+  overflow: hidden;
 
+  top: 0;
+  width: 100%;
+  position: fixed;
   margin-bottom: 10px;
+
+  z-index: 1001;
 
   background: rgba(103,79,127,1) ; /* Old browsers */
 }
@@ -84,8 +89,10 @@
 }
 
 .content {
+ 
   min-height: 50vh;
   margin: 0 20vw 0 20vw;
+  margin-top:11.5rem;
 
 }
 

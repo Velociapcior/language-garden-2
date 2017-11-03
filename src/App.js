@@ -52,21 +52,21 @@ class PageTabs extends Component {
             <div className="todo col-md-8">              
               <ul>
                   <li>
-                  <div class="todo-icon fui-user"></div>
+                  <div class="todo-icon fui-check"></div>
                     <div className="todo-content">
                       <h4 className="todo-name">Opis zajęć</h4>
                       Wprowadzenie zawartości leksykalno-gramatycznej odbywa się głównie za pomocą materiałów wizualnych (karty, mapy, prezentacje, rysunki, przedmioty i wiele innych) oraz poprzez gry i zabawy.
                     </div>
                   </li>
                   <li>
-                  <div class="todo-icon fui-user"></div>
+                  <div class="todo-icon fui-check"></div>
                     <div className="todo-content">
                       <h4 className="todo-name">Opis zajęć</h4>
                       Wprowadzenie zawartości leksykalno-gramatycznej odbywa się głównie za pomocą materiałów wizualnych (karty, mapy, prezentacje, rysunki, przedmioty i wiele innych) oraz poprzez gry i zabawy.
                     </div>
                   </li>
                   <li>                 
-                    <div class="todo-icon fui-user"></div>
+                    <div class="todo-icon fui-check"></div>
                     <div className="todo-content">
                       <h4 className="todo-name">Opis zajęć</h4>
                       Wprowadzenie zawartości leksykalno-gramatycznej odbywa się głównie za pomocą materiałów wizualnych (karty, mapy, prezentacje, rysunki, przedmioty i wiele innych) oraz poprzez gry i zabawy.
