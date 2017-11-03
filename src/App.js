@@ -4,10 +4,10 @@ import kidspanel from './assests/kids-panel.jpg'
 import { CSSTransitionGroup } from 'react-transition-group';
 import '../node_modules/flat-ui/bootstrap/css/bootstrap.css';
 import '../node_modules/flat-ui/css/flat-ui.css';
-import './App.css';
 import SimpleSlider from './SimpleSlider'
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
+import './App.css';
 
 class Page extends Component {
   render(){
@@ -36,7 +36,6 @@ class PageTabs extends Component {
       <div>
         <h2>Oferta</h2>
         <Tabs
-          className="container"
           defaultTab="one"
           onChange={(tabId) => { console.log(tabId) }}
         >
