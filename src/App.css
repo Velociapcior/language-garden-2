@@ -189,3 +189,26 @@ div.col-md-8 h3, div.col-md-8 h6 {
   background-color: rgba(59,38,82,1);
   color: #e1e1e1;
 }
+
+.Sticky {
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+
+}
+
+ .Sticky .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    margin: 0;
+ }
+
+ .sticky-class{
+   background-color: #000;
+   z-index: 1001;
+ }

@@ -44,7 +44,7 @@ class PageTabs extends Component {
                       </div>
                     </li>
                     <li>
-                    <div class="todo-icon fui-check"></div>
+                    <div className="todo-icon fui-check"></div>
                       <div className="todo-content">
                         <h4 className="todo-name"> Program nauczania</h4>
                         W zależności od potrzeb grupy zajęcia mogą być
@@ -54,7 +54,7 @@ class PageTabs extends Component {
                       </div>
                     </li>
                     <li>                 
-                      <div class="todo-icon fui-check"></div>
+                      <div className="todo-icon fui-check"></div>
                       <div className="todo-content">
                         <h4 className="todo-name">Szansa dla wszystkich</h4>
                         Stawiamy przede wszystkim na ścisłą współpracę z rodzicami, po to, aby
@@ -125,21 +125,21 @@ class PageTabs extends Component {
                       </div>
                     </li>
                     <li>
-                    <div class="todo-icon fui-check"></div>
+                    <div className="todo-icon fui-check"></div>
                       <div className="todo-content">
                         <h4 className="todo-name">  Kursy egzaminacyjne</h4>
                         FCE, CAE, CPE oraz BEC, IELTS. 
                       </div>
                     </li>
                     <li>                 
-                      <div class="todo-icon fui-check"></div>
+                      <div className="todo-icon fui-check"></div>
                       <div className="todo-content">
                         <h4 className="todo-name"> Kursy specjalistyczne</h4>
                         Kursy specjalistyczne Medycyna, biznes, media, gastronomia, turystyka, historia, literatura, i wiele innych. 
                       </div>
                     </li>
                     <li>                 
-                      <div class="todo-icon fui-check"></div>
+                      <div className="todo-icon fui-check"></div>
                       <div className="todo-content">
                         <h4 className="todo-name">Żywy język</h4>
                         Na tym etapie nauczania staramy się mówić przeważnie w języku obcym, co doskonale uczy sprawności słuchania ze zrozumieniem, kształtuje wymowę i zachęca do interakcji. 

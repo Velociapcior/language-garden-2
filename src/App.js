@@ -7,6 +7,7 @@ import SimpleSlider from './SimpleSlider'
 import './App.css';
 import PageTabs from './PageTabs';
 import PricingTable from './PricingTable';
+import {  Sticky } from './sticky';
 
 class Page extends Component {
   render(){
@@ -18,9 +19,12 @@ class Page extends Component {
                 <h1 className="Page-title">Language Garden</h1>
             </div>
             <div className="content">
-              <SimpleSlider/>
-              <PageTabs/>
-              <PricingTable/>
+                <Sticky className="sticky-class">
+                  Chuj ci w dype
+                </Sticky>
+                <SimpleSlider/>
+                <PageTabs/>
+                <PricingTable/>
             </div>
           </div>
         : null}
