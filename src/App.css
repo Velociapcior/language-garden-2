@@ -173,6 +173,14 @@ div.col-md-8 h3, div.col-md-8 h6 {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .ReactTable {
+   font-size: 10px;
+   
+  }
+  
+}
+
 .rt-th
 {
   color: #e1e1e1;
