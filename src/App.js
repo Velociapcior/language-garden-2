@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import kidspanel from './assests/kids-panel.jpg' 
 import { CSSTransitionGroup } from 'react-transition-group';
 import '../node_modules/flat-ui/bootstrap/css/bootstrap.css';
 import '../node_modules/flat-ui/css/flat-ui.css';
 import SimpleSlider from './SimpleSlider'
-import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
-import 'react-web-tabs/dist/react-web-tabs.css';
 import './App.css';
+import PageTabs from './PageTabs'
 
 class Page extends Component {
   render(){
@@ -27,62 +25,6 @@ class Page extends Component {
       </div>
     )
     
-  }
-}
-
-class PageTabs extends Component {
-  render() {
-    return (
-      <div>
-        <h2>Oferta</h2>
-        <Tabs
-          defaultTab="one"
-          onChange={(tabId) => { console.log(tabId) }}
-        >
-          <TabList>
-            <Tab tabFor="one">Dzieci</Tab>
-            <Tab tabFor="two">Młodzież</Tab>
-            <Tab tabFor="three">Dorośli</Tab>
-          </TabList>
-          <TabPanel tabId="one">
-          <div className="col-md-4">
-            <img className="img-offer" alt="kids" src={kidspanel} />
-          </div> 
-            <div className="todo col-md-8">              
-              <ul>
-                  <li>
-                  <div class="todo-icon fui-check"></div>
-                    <div className="todo-content">
-                      <h4 className="todo-name">Opis zajęć</h4>
-                      Wprowadzenie zawartości leksykalno-gramatycznej odbywa się głównie za pomocą materiałów wizualnych (karty, mapy, prezentacje, rysunki, przedmioty i wiele innych) oraz poprzez gry i zabawy.
-                    </div>
-                  </li>
-                  <li>
-                  <div class="todo-icon fui-check"></div>
-                    <div className="todo-content">
-                      <h4 className="todo-name">Opis zajęć</h4>
-                      Wprowadzenie zawartości leksykalno-gramatycznej odbywa się głównie za pomocą materiałów wizualnych (karty, mapy, prezentacje, rysunki, przedmioty i wiele innych) oraz poprzez gry i zabawy.
-                    </div>
-                  </li>
-                  <li>                 
-                    <div class="todo-icon fui-check"></div>
-                    <div className="todo-content">
-                      <h4 className="todo-name">Opis zajęć</h4>
-                      Wprowadzenie zawartości leksykalno-gramatycznej odbywa się głównie za pomocą materiałów wizualnych (karty, mapy, prezentacje, rysunki, przedmioty i wiele innych) oraz poprzez gry i zabawy.
-                    </div>
-                    </li>
-              </ul>
-            </div>
-          </TabPanel>
-          <TabPanel tabId="two">
-            <p>Tab 2 content</p>
-          </TabPanel>
-          <TabPanel tabId="three">
-            <p>Tab 3 content</p>
-          </TabPanel>
-        </Tabs>
-      </div>
-    );
   }
 }
 
