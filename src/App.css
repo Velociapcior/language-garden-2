@@ -207,16 +207,34 @@ div.col-md-8 h3, div.col-md-8 h6 {
 
 }
 
- .Sticky .sticky {
+.sticky {
     position: fixed;
-    top: 0;
     left: 0;
-    right: 0;
     border-radius: 0;
     margin: 0;
  }
 
  .sticky-class{
-   background-color: #000;
+  position: fixed;
+  left: 0;
+  border-radius: 0;
+  margin: 0;
+  width:15vw;
+   background-color: transparent;
    z-index: 1001;
+ }
+
+@media screen and (max-width: 1079px) {
+  .sticky-class {
+    display: none;
+  }
+}
+
+ .todo li {
+   cursor: default;
+ }
+ .btn.btn-primary.col-md-12 {
+   border: 0;
+   border-radius: 0;
+   min-width:5vw;
  }

@@ -20,7 +20,12 @@ class Page extends Component {
             </div>
             <div className="content">
                 <Sticky className="sticky-class">
-                  Chuj ci w dype
+                  <div className="btn-group">
+                  <a className="btn btn-primary col-md-12" href="#fakelink"><span>Początek</span></a>
+                  <a className="btn btn-primary col-md-12" href="#fakelink"><span>Oferta</span></a>
+                  <a className="btn btn-primary col-md-12" href="#fakelink"><span>Cennik</span></a>
+                  <a className="btn btn-primary col-md-12" href="#fakelink"><span>Kontakt</span></a>
+                  </div>
                 </Sticky>
                 <SimpleSlider/>
                 <PageTabs/>

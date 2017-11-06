@@ -54,19 +54,23 @@ class PricingTable extends Component{
                             columns: [
                             {
                                 Header: "Zajęcia indywidualne",
-                                accessor: 'individual'
+                                accessor: 'individual',
+                                minWidth: 30
                             },
                             {
                                 Header: "Grupa dwuosobowa",
-                                accessor: 'group2'
+                                accessor: 'group2',
+                                minWidth: 30
                             },
                             {
                                 Header: "Grupa czteroosobowa",
-                                accessor: 'group4'
+                                accessor: 'group4',
+                                minWidth: 30
                             },
                             {
                                 Header: "Grupa sześciosobowa",
-                                accessor: 'group6'
+                                accessor: 'group6',
+                                minWidth: 30
                             }]
                         }
                     ]}

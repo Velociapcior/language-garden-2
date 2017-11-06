@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 export class Sticky extends React.Component {
   componentDidMount() {
@@ -33,7 +34,7 @@ export class Sticky extends React.Component {
     const { className, enter, exit, children } = this.props;
   return(
   <div
-    className={'Sticky ${className}'}
+    className={'Sticky ' + className}
     data-sticky
     data-sticky-enter={enter}
     data-sticky-exit={exit}>
