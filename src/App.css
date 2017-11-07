@@ -250,3 +250,66 @@ div.col-md-8 h3, div.col-md-8 h6 {
    border-radius: 0;
    min-width:5vw;
  }
+
+ .map-container {
+   width: 59vw;
+   height: 40vh;
+   margin-bottom: 100px;
+  }
+
+@media screen and (max-width: 1079px) {
+  .map-container {
+    width: 99vw;
+    height: 35vh;
+  }
+}
+
+/* base CSS element */
+.tip {
+  font-size: 1.3rem;
+  background: rgba(103,79,127,1);
+  color: whitesmoke;
+  border: 1px solid rgba(59,38,82,1);
+  opacity: 0.7;
+	padding: 10px;
+	position: relative;
+  width: 20rem;
+  
+  -webkit-transform: translate(-50%, -110%); 
+  -moz-transform: translate(-50%, -110%); 
+  transform: translate(-50%, -110%); 
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tip:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* arrows - :before and :after */
+.tip:before {
+	position: absolute;
+	display: inline-block;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-top: 9px solid rgba(103,79,127,1);
+	left: 50%;
+	bottom: -10px;
+	content: '';
+}
+
+.tip:after {
+	position: absolute;
+	display: inline-block;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgba(103,79,127,1);
+	left: 50%;
+	bottom: -10px;
+	content: '';
+}

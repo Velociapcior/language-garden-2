@@ -8,6 +8,7 @@ import './App.css';
 import PageTabs from './PageTabs';
 import PricingTable from './PricingTable';
 import {  Sticky } from './sticky';
+import Map from './Map';
 
 class Page extends Component {
   render(){
@@ -30,6 +31,7 @@ class Page extends Component {
                 <SimpleSlider/>
                 <PageTabs/>
                 <PricingTable/>
+                <Map />
             </div>
           </div>
         : null}
