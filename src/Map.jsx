@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import logo from './logo.svg';
-import '../node_modules/flat-ui/bootstrap/css/bootstrap.css';
-import '../node_modules/flat-ui/css/flat-ui.css';
 import './App.css';
 
 class MapLabel extends Component{
@@ -30,7 +28,6 @@ class Map extends Component {
   render() {
     return (
         <div className='map-container'>
-            <h2>Kontakt</h2>
             <h4>Mapa dojazdu</h4>
             <GoogleMapReact
                 defaultCenter={this.props.center}

@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import { CSSTransitionGroup } from 'react-transition-group';
 import '../node_modules/flat-ui/bootstrap/css/bootstrap.css';
 import '../node_modules/flat-ui/css/flat-ui.css';
-import SimpleSlider from './SimpleSlider'
 import './App.css';
+import logo from './logo.svg';
+import { CSSTransitionGroup } from 'react-transition-group';
+import SimpleSlider from './SimpleSlider'
 import PageTabs from './PageTabs';
 import PricingTable from './PricingTable';
 import {  Sticky } from './sticky';
 import Map from './Map';
+import ContactData from './ContactData'
 
 class Page extends Component {
   render(){
@@ -31,6 +32,7 @@ class Page extends Component {
                 <SimpleSlider/>
                 <PageTabs/>
                 <PricingTable/>
+                <ContactData/>
                 <Map />
             </div>
           </div>

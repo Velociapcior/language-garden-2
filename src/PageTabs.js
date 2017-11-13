@@ -2,11 +2,8 @@ import React, { Component } from 'react';
 import kidspanel from './assests/kids-panel.jpg';
 import youthpanel from './assests/youth-panel.jpg';
 import adultpanel from './assests/adult-panel.jpg';
-import '../node_modules/flat-ui/bootstrap/css/bootstrap.css';
-import '../node_modules/flat-ui/css/flat-ui.css';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
-import './App.css';
 
 class PageTabs extends Component {
   render() {

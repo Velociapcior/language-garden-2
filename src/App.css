@@ -1,3 +1,5 @@
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
 .App {
   text-align: center;
 }
@@ -169,6 +171,10 @@ div.col-md-8 h3, div.col-md-8 h6 {
   margin-bottom: 0;
 }
 
+.todo li {
+  cursor: default;
+}
+
 .ReactTable {
   margin-bottom: 30px;
 }
@@ -176,9 +182,7 @@ div.col-md-8 h3, div.col-md-8 h6 {
 @media screen and (max-width: 480px) {
   .ReactTable {
    font-size: 10px;
-   
   }
-  
 }
 
 .rt-th
@@ -242,9 +246,6 @@ div.col-md-8 h3, div.col-md-8 h6 {
   }
 }
 
- .todo li {
-   cursor: default;
- }
  .btn.btn-primary.col-md-12 {
    border: 0;
    border-radius: 0;
@@ -312,4 +313,28 @@ div.col-md-8 h3, div.col-md-8 h6 {
 	left: 50%;
 	bottom: -10px;
 	content: '';
+}
+
+.contact-data-container {
+  min-width: 100%;
+  background-color: rgba(103,79,127,1);
+  color: whitesmoke;
+  padding: 10px;
+}
+
+address {
+  color: #B79CD1;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+address > span {
+  margin-left: 5px;
+}
+
+address > i {
+  margin-top: 5px;
+  
 }
