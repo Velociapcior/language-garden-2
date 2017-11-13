@@ -1,7 +1,3 @@
-body {
-  background-color: #fafafa;
-}
-
 .App {
   text-align: center;
 }
@@ -264,8 +260,7 @@ div.col-md-8 h3, div.col-md-8 h6 {
 @media screen and (max-width: 1079px) {
   .map-container {
     width: 99vw;
-    height: 35vh;
-    300px;
+    height: 300px;
   }
 }
 
