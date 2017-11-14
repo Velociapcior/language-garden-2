@@ -323,18 +323,51 @@ div.col-md-8 h3, div.col-md-8 h6 {
 }
 
 address {
-  color: #B79CD1;
   font-size: 0.9em;
   display: flex;
-  justify-content: space-evenly;
   padding: 5px;
 }
 
-address > span {
+@media screen and (max-width: 768px){
+  address{
+    flex-flow:column wrap;
+  }
+}
+
+.address-container {
+  margin-right: 2em;
+  display: flex;
+  color: #B79CD1;
+}
+
+.address-container:hover
+{
+  color: whitesmoke
+}
+
+.address-container:visited
+{
+  color: #B79CD1
+}
+
+.address-container:active
+{
+  color: rgba(59,38,82,1);
+}
+
+.address-container > span {
   margin-left: 5px;
 }
 
-address > i {
+.address-container > i {
   margin-top: 5px;
   
+}
+
+.phone-container {
+  color: #B79CD1;
+}
+
+.phone-container:hover {
+  color: whitesmoke
 }

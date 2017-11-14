@@ -4,6 +4,7 @@ import '../node_modules/flat-ui/css/flat-ui.css';
 import './App.css';
 import logo from './logo.svg';
 import { CSSTransitionGroup } from 'react-transition-group';
+import scrollToComponent from 'react-scroll-to-component';
 import SimpleSlider from './SimpleSlider'
 import PageTabs from './PageTabs';
 import PricingTable from './PricingTable';
@@ -23,17 +24,18 @@ class Page extends Component {
             <div className="content">
                 <Sticky className="sticky-class">
                   <div className="btn-group">
-                  <a className="btn btn-primary col-md-12" href="#fakelink"><span>Początek</span></a>
-                  <a className="btn btn-primary col-md-12" href="#fakelink"><span>Oferta</span></a>
-                  <a className="btn btn-primary col-md-12" href="#fakelink"><span>Cennik</span></a>
-                  <a className="btn btn-primary col-md-12" href="#fakelink"><span>Kontakt</span></a>
+                  <a className="btn btn-primary col-md-12" onClick={() => scrollToComponent(this.SimpleSlider, {offset: -150, align: 'top', duration: 300})}><span>Początek</span></a>
+                  <a className="btn btn-primary col-md-12" onClick={() => scrollToComponent(this.PageTabs, {offset: 0, align: 'top', duration: 300})}><span>Oferta</span></a>
+                  <a className="btn btn-primary col-md-12" onClick={() => scrollToComponent(this.PricingTable, {offset: 0, align: 'top', duration: 300})}><span>Cennik</span></a>
+                  <a className="btn btn-primary col-md-12" onClick={() => scrollToComponent(this.ContactData, {offset: 0, align: 'top', duration: 300})}><span>Kontakt</span></a>
+                  <a className="btn btn-primary col-md-12" onClick={() => scrollToComponent(this.Map, {offset: 0, align: 'top', duration: 300})}><span>Mapa dojazdu</span></a>
                   </div>
                 </Sticky>
-                <SimpleSlider/>
-                <PageTabs/>
-                <PricingTable/>
-                <ContactData/>
-                <Map />
+                <SimpleSlider ref={(SimpleSlider) => {this.SimpleSlider = SimpleSlider;}}/>
+                <PageTabs ref={(PageTabs) => {this.PageTabs = PageTabs;}}/>
+                <PricingTable ref={(PricingTable) => {this.PricingTable = PricingTable;}}/>
+                <ContactData ref={(ContactData) => {this.ContactData = ContactData;}}/>
+                <Map ref={(Map) => {this.Map = Map;}}/>
             </div>
           </div>
         : null}
